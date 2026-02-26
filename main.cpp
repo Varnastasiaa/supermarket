@@ -1,36 +1,29 @@
-#include <iostream>
 #include "zara.h"
 #include "bershka.h"
-
-using namespace std;
-
-int main() {
-
+int main(){
     int choice;
 
-    cout << "Choose shop:\n";
-    cout << "1 - Zara\n";
-    cout << "2 - Bershka\n";
-    cout << "Your choice: ";
-    cin >> choice;
+    cout<<"choose your shop\n";
+    cout<<"Zara=1\n";
+    cout<<"------------------\n";
+    cout<<"bershka=2\n";
+    cout<<"------------------\n";
+    cout<<"youre choice: ";
+    cin>>choice;
+    cout<<endl;
 
-    shop* s = nullptr;
+    shop* shop=nullptr;
 
-    if (choice == 1) {
-        s = new zara();
+    if(choice==1){
+        shop= new zara();
     }
-    else if (choice == 2) {
-        s = new bershka();
+    else if(choice==2){
+        shop= new bershka();
     }
-    else {
-        cout << "Wrong choice!\n";
-        return 0;
+    else{
+        cout<<"invalid choice\n";
     }
-
-    cout << "\n";
-    s->print();
-
-    delete s;
-
+    shop->print();
+    delete shop;
     return 0;
 }
