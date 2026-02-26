@@ -3,7 +3,7 @@
 
 class bershka : public shop {
 public:
-    bershka() : shop(35)
+    bershka() : shop(35) {};
 
     void print() override {
         cout << "bill\n";
