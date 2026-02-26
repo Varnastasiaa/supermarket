@@ -11,5 +11,4 @@ class shop{
         discount =d;
     }
     virtual void print() =0; 
-    
 };
