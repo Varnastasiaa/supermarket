@@ -6,7 +6,7 @@ class zara: public  shop{
     zara(): shop(20){};
     void print(){
         cout<<"    bill\n";
-        cout<<"------------------\n";
+        cout<<"------_________------------\n";
         cout<<"Zara\n";
         cout<<"discount: "<<discount<<"%\n";
     }

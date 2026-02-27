@@ -10,5 +10,5 @@ class shop{
     shop(int d) {
         discount =d;
     }
-    virtual void print() =0; 
+    virtual void print() = 0; 
 };
