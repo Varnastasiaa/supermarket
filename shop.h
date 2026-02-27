@@ -8,7 +8,7 @@ class shop{
     int discount;
     public:
     shop(int d) {
-        discount =d;
+        discount = d;
     }
     virtual void print() = 0; 
 };
